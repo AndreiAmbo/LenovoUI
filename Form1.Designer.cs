@@ -1,6 +1,6 @@
 ﻿namespace LenovoUI
 {
-    partial class Form1
+    partial class LenovoUI
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             mainPanel = new TableLayoutPanel();
             leftPanel = new TableLayoutPanel();
             gpuPanel = new Panel();
@@ -38,12 +39,12 @@
             button3 = new Button();
             label3 = new Label();
             firstLeftPanel = new Panel();
+            button2 = new Button();
             button8 = new Button();
             label2 = new Label();
             label1 = new Label();
             gpuLabel = new Label();
             button1 = new Button();
-            button2 = new Button();
             cpuButton = new Button();
             systemToolsLabel = new Label();
             panel1 = new Panel();
@@ -85,6 +86,7 @@
             panel12 = new Panel();
             checkBox10 = new CheckBox();
             label15 = new Label();
+            toolTip1 = new ToolTip(components);
             mainPanel.SuspendLayout();
             leftPanel.SuspendLayout();
             gpuPanel.SuspendLayout();
@@ -240,17 +242,30 @@
             // firstLeftPanel
             // 
             firstLeftPanel.BackColor = Color.DarkSlateGray;
+            firstLeftPanel.Controls.Add(button2);
             firstLeftPanel.Controls.Add(button8);
             firstLeftPanel.Controls.Add(label2);
             firstLeftPanel.Controls.Add(label1);
             firstLeftPanel.Controls.Add(gpuLabel);
             firstLeftPanel.Controls.Add(button1);
-            firstLeftPanel.Controls.Add(button2);
             firstLeftPanel.Controls.Add(cpuButton);
             firstLeftPanel.Location = new Point(3, 3);
             firstLeftPanel.Name = "firstLeftPanel";
             firstLeftPanel.Size = new Size(1092, 452);
             firstLeftPanel.TabIndex = 5;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.DarkSlateGray;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.Transparent;
+            button2.Location = new Point(65, 69);
+            button2.Name = "button2";
+            button2.Size = new Size(51, 161);
+            button2.TabIndex = 10;
+            toolTip1.SetToolTip(button2, "GPU usage");
+            button2.UseVisualStyleBackColor = false;
             // 
             // button8
             // 
@@ -264,6 +279,7 @@
             button8.Size = new Size(204, 161);
             button8.TabIndex = 9;
             button8.Text = "100%";
+            toolTip1.SetToolTip(button8, "SSD usage");
             button8.UseVisualStyleBackColor = false;
             // 
             // label2
@@ -315,19 +331,8 @@
             button1.Name = "button1";
             button1.Size = new Size(51, 161);
             button1.TabIndex = 5;
+            toolTip1.SetToolTip(button1, "VRAM usage");
             button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.DarkSlateGray;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.Transparent;
-            button2.Location = new Point(65, 69);
-            button2.Name = "button2";
-            button2.Size = new Size(51, 161);
-            button2.TabIndex = 3;
-            button2.UseVisualStyleBackColor = false;
             // 
             // cpuButton
             // 
@@ -341,6 +346,7 @@
             cpuButton.Size = new Size(204, 161);
             cpuButton.TabIndex = 4;
             cpuButton.Text = "CPU";
+            toolTip1.SetToolTip(cpuButton, "CPU usage");
             cpuButton.UseVisualStyleBackColor = false;
             // 
             // systemToolsLabel
@@ -374,9 +380,9 @@
             label4.ForeColor = Color.Transparent;
             label4.Location = new Point(0, 0);
             label4.Name = "label4";
-            label4.Size = new Size(204, 45);
+            label4.Size = new Size(223, 45);
             label4.TabIndex = 8;
-            label4.Text = "System Tools";
+            label4.Text = "System Health";
             // 
             // rightPanel
             // 
@@ -435,7 +441,7 @@
             // checkBox8
             // 
             checkBox8.AutoSize = true;
-            checkBox8.Location = new Point(502, 48);
+            checkBox8.Location = new Point(502, 51);
             checkBox8.Name = "checkBox8";
             checkBox8.Size = new Size(121, 29);
             checkBox8.TabIndex = 17;
@@ -467,7 +473,7 @@
             // checkBox7
             // 
             checkBox7.AutoSize = true;
-            checkBox7.Location = new Point(502, 41);
+            checkBox7.Location = new Point(502, 51);
             checkBox7.Name = "checkBox7";
             checkBox7.Size = new Size(121, 29);
             checkBox7.TabIndex = 16;
@@ -627,7 +633,7 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(502, 16);
+            checkBox1.Location = new Point(502, 51);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(121, 29);
             checkBox1.TabIndex = 9;
@@ -638,10 +644,10 @@
             // 
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
-            label5.Dock = DockStyle.Top;
+            label5.Dock = DockStyle.Bottom;
             label5.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.Transparent;
-            label5.Location = new Point(0, 0);
+            label5.Location = new Point(0, 34);
             label5.Name = "label5";
             label5.Size = new Size(196, 45);
             label5.TabIndex = 8;
@@ -659,7 +665,7 @@
             // checkBox2
             // 
             checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(502, 41);
+            checkBox2.Location = new Point(502, 51);
             checkBox2.Name = "checkBox2";
             checkBox2.Size = new Size(121, 29);
             checkBox2.TabIndex = 11;
@@ -721,7 +727,7 @@
             // checkBox11
             // 
             checkBox11.AutoSize = true;
-            checkBox11.Location = new Point(502, 62);
+            checkBox11.Location = new Point(502, 77);
             checkBox11.Name = "checkBox11";
             checkBox11.Size = new Size(131, 29);
             checkBox11.TabIndex = 18;
@@ -785,7 +791,7 @@
             // checkBox10
             // 
             checkBox10.AutoSize = true;
-            checkBox10.Location = new Point(502, 69);
+            checkBox10.Location = new Point(502, 77);
             checkBox10.Name = "checkBox10";
             checkBox10.Size = new Size(131, 29);
             checkBox10.TabIndex = 18;
@@ -805,7 +811,7 @@
             label15.TabIndex = 16;
             label15.Text = "WiFi Security";
             // 
-            // Form1
+            // LenovoUI
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -815,8 +821,9 @@
             ClientSize = new Size(1873, 1176);
             Controls.Add(mainPanel);
             ForeColor = SystemColors.ControlText;
-            Name = "Form1";
-            Text = "Form1";
+            Name = "LenovoUI";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "LenovoUI";
             mainPanel.ResumeLayout(false);
             leftPanel.ResumeLayout(false);
             leftPanel.PerformLayout();
@@ -876,7 +883,6 @@
         private Label systemToolsLabel;
         private Button button7;
         private TableLayoutPanel leftPanel;
-        private Button button2;
         private Panel panel1;
         private Label label4;
         private Button button8;
@@ -917,5 +923,7 @@
         private CheckBox checkBox11;
         private CheckBox checkBox9;
         private CheckBox checkBox10;
+        private Button button2;
+        private ToolTip toolTip1;
     }
 }
