@@ -41,14 +41,14 @@
             firstLeftPanel = new Panel();
             button2 = new Button();
             button8 = new Button();
-            label2 = new Label();
-            label1 = new Label();
+            ssdLabel = new Label();
+            vramLabel = new Label();
             gpuLabel = new Label();
             button1 = new Button();
             cpuButton = new Button();
             systemToolsLabel = new Label();
-            panel1 = new Panel();
-            label4 = new Label();
+            systemHealthPanel = new Panel();
+            systemHealthLabel = new Label();
             rightPanel = new TableLayoutPanel();
             firstRightPanel = new TableLayoutPanel();
             panel9 = new Panel();
@@ -91,7 +91,7 @@
             leftPanel.SuspendLayout();
             gpuPanel.SuspendLayout();
             firstLeftPanel.SuspendLayout();
-            panel1.SuspendLayout();
+            systemHealthPanel.SuspendLayout();
             rightPanel.SuspendLayout();
             firstRightPanel.SuspendLayout();
             panel9.SuspendLayout();
@@ -136,7 +136,7 @@
             leftPanel.Controls.Add(gpuPanel, 0, 2);
             leftPanel.Controls.Add(firstLeftPanel, 0, 0);
             leftPanel.Controls.Add(systemToolsLabel, 0, 1);
-            leftPanel.Controls.Add(panel1, 0, 3);
+            leftPanel.Controls.Add(systemHealthPanel, 0, 3);
             leftPanel.Location = new Point(3, 3);
             leftPanel.Name = "leftPanel";
             leftPanel.RowCount = 4;
@@ -160,6 +160,7 @@
             gpuPanel.Name = "gpuPanel";
             gpuPanel.Size = new Size(1092, 280);
             gpuPanel.TabIndex = 6;
+            toolTip1.SetToolTip(gpuPanel, "This is System Tools panel");
             // 
             // button7
             // 
@@ -244,8 +245,8 @@
             firstLeftPanel.BackColor = Color.DarkSlateGray;
             firstLeftPanel.Controls.Add(button2);
             firstLeftPanel.Controls.Add(button8);
-            firstLeftPanel.Controls.Add(label2);
-            firstLeftPanel.Controls.Add(label1);
+            firstLeftPanel.Controls.Add(ssdLabel);
+            firstLeftPanel.Controls.Add(vramLabel);
             firstLeftPanel.Controls.Add(gpuLabel);
             firstLeftPanel.Controls.Add(button1);
             firstLeftPanel.Controls.Add(cpuButton);
@@ -253,6 +254,7 @@
             firstLeftPanel.Name = "firstLeftPanel";
             firstLeftPanel.Size = new Size(1092, 452);
             firstLeftPanel.TabIndex = 5;
+            toolTip1.SetToolTip(firstLeftPanel, "This is CPU&GPU panel");
             // 
             // button2
             // 
@@ -282,31 +284,31 @@
             toolTip1.SetToolTip(button8, "SSD usage");
             button8.UseVisualStyleBackColor = false;
             // 
-            // label2
+            // ssdLabel
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.DarkSlateGray;
-            label2.FlatStyle = FlatStyle.Flat;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.Transparent;
-            label2.Location = new Point(791, 254);
-            label2.Name = "label2";
-            label2.Size = new Size(57, 32);
-            label2.TabIndex = 8;
-            label2.Text = "SSD";
+            ssdLabel.AutoSize = true;
+            ssdLabel.BackColor = Color.DarkSlateGray;
+            ssdLabel.FlatStyle = FlatStyle.Flat;
+            ssdLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ssdLabel.ForeColor = Color.Transparent;
+            ssdLabel.Location = new Point(791, 254);
+            ssdLabel.Name = "ssdLabel";
+            ssdLabel.Size = new Size(57, 32);
+            ssdLabel.TabIndex = 8;
+            ssdLabel.Text = "SSD";
             // 
-            // label1
+            // vramLabel
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.DarkSlateGray;
-            label1.FlatStyle = FlatStyle.Flat;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.Transparent;
-            label1.Location = new Point(444, 254);
-            label1.Name = "label1";
-            label1.Size = new Size(80, 32);
-            label1.TabIndex = 7;
-            label1.Text = "VRAM";
+            vramLabel.AutoSize = true;
+            vramLabel.BackColor = Color.DarkSlateGray;
+            vramLabel.FlatStyle = FlatStyle.Flat;
+            vramLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            vramLabel.ForeColor = Color.Transparent;
+            vramLabel.Location = new Point(444, 254);
+            vramLabel.Name = "vramLabel";
+            vramLabel.Size = new Size(80, 32);
+            vramLabel.TabIndex = 7;
+            vramLabel.Text = "VRAM";
             // 
             // gpuLabel
             // 
@@ -362,27 +364,28 @@
             systemToolsLabel.TabIndex = 7;
             systemToolsLabel.Text = "System Tools";
             // 
-            // panel1
+            // systemHealthPanel
             // 
-            panel1.BackColor = Color.DarkSlateGray;
-            panel1.Controls.Add(label4);
-            panel1.Location = new Point(3, 861);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1092, 282);
-            panel1.TabIndex = 8;
+            systemHealthPanel.BackColor = Color.DarkSlateGray;
+            systemHealthPanel.Controls.Add(systemHealthLabel);
+            systemHealthPanel.Location = new Point(3, 861);
+            systemHealthPanel.Name = "systemHealthPanel";
+            systemHealthPanel.Size = new Size(1092, 282);
+            systemHealthPanel.TabIndex = 8;
+            toolTip1.SetToolTip(systemHealthPanel, "This is System Health panel");
             // 
-            // label4
+            // systemHealthLabel
             // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Dock = DockStyle.Top;
-            label4.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.Transparent;
-            label4.Location = new Point(0, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(223, 45);
-            label4.TabIndex = 8;
-            label4.Text = "System Health";
+            systemHealthLabel.AutoSize = true;
+            systemHealthLabel.BackColor = Color.Transparent;
+            systemHealthLabel.Dock = DockStyle.Top;
+            systemHealthLabel.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            systemHealthLabel.ForeColor = Color.Transparent;
+            systemHealthLabel.Location = new Point(0, 0);
+            systemHealthLabel.Name = "systemHealthLabel";
+            systemHealthLabel.Size = new Size(223, 45);
+            systemHealthLabel.TabIndex = 8;
+            systemHealthLabel.Text = "System Health";
             // 
             // rightPanel
             // 
@@ -401,6 +404,7 @@
             rightPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 30F));
             rightPanel.Size = new Size(638, 1146);
             rightPanel.TabIndex = 1;
+            toolTip1.SetToolTip(rightPanel, "This is right panel");
             // 
             // firstRightPanel
             // 
@@ -428,6 +432,7 @@
             firstRightPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
             firstRightPanel.Size = new Size(632, 681);
             firstRightPanel.TabIndex = 0;
+            toolTip1.SetToolTip(firstRightPanel, "This is Legion Edge panel");
             // 
             // panel9
             // 
@@ -714,6 +719,7 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel1.Size = new Size(632, 339);
             tableLayoutPanel1.TabIndex = 2;
+            toolTip1.SetToolTip(tableLayoutPanel1, "This is Quick Settings Panel");
             // 
             // panel11
             // 
@@ -831,8 +837,8 @@
             gpuPanel.PerformLayout();
             firstLeftPanel.ResumeLayout(false);
             firstLeftPanel.PerformLayout();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            systemHealthPanel.ResumeLayout(false);
+            systemHealthPanel.PerformLayout();
             rightPanel.ResumeLayout(false);
             rightPanel.PerformLayout();
             firstRightPanel.ResumeLayout(false);
@@ -864,18 +870,15 @@
         }
 
         #endregion
-        private Label ssdLabel;
         private TableLayoutPanel mainPanel;
-        private Panel cpuPanel;
-        private Label label1;
+        private Label vramLabel;
         private Button button1;
         private Button cpuButton;
         private Panel gpuPanel;
         private Label label3;
         private Panel firstLeftPanel;
-        private Label label2;
+        private Label ssdLabel;
         private Label gpuLabel;
-        private Panel secondLeftPanel;
         private Button button3;
         private Button button4;
         private Button button5;
@@ -883,8 +886,8 @@
         private Label systemToolsLabel;
         private Button button7;
         private TableLayoutPanel leftPanel;
-        private Panel panel1;
-        private Label label4;
+        private Panel systemHealthPanel;
+        private Label systemHealthLabel;
         private Button button8;
         private TableLayoutPanel firstRightPanel;
         private TableLayoutPanel rightPanel;
