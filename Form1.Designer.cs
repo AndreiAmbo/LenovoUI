@@ -48,11 +48,62 @@
             systemToolsLabel = new Label();
             panel1 = new Panel();
             label4 = new Label();
+            rightPanel = new TableLayoutPanel();
+            firstRightPanel = new TableLayoutPanel();
+            panel9 = new Panel();
+            checkBox8 = new CheckBox();
+            label12 = new Label();
+            panel8 = new Panel();
+            checkBox7 = new CheckBox();
+            label11 = new Label();
+            panel7 = new Panel();
+            checkBox6 = new CheckBox();
+            label10 = new Label();
+            panel6 = new Panel();
+            checkBox5 = new CheckBox();
+            label9 = new Label();
+            panel5 = new Panel();
+            checkBox4 = new CheckBox();
+            label8 = new Label();
+            panel4 = new Panel();
+            checkBox3 = new CheckBox();
+            label7 = new Label();
+            panel2 = new Panel();
+            checkBox1 = new CheckBox();
+            label5 = new Label();
+            panel3 = new Panel();
+            checkBox2 = new CheckBox();
+            label6 = new Label();
+            label13 = new Label();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            panel11 = new Panel();
+            checkBox11 = new CheckBox();
+            label16 = new Label();
+            panel10 = new Panel();
+            checkBox9 = new CheckBox();
+            label14 = new Label();
+            panel12 = new Panel();
+            checkBox10 = new CheckBox();
+            label15 = new Label();
             mainPanel.SuspendLayout();
             leftPanel.SuspendLayout();
             gpuPanel.SuspendLayout();
             firstLeftPanel.SuspendLayout();
             panel1.SuspendLayout();
+            rightPanel.SuspendLayout();
+            firstRightPanel.SuspendLayout();
+            panel9.SuspendLayout();
+            panel8.SuspendLayout();
+            panel7.SuspendLayout();
+            panel6.SuspendLayout();
+            panel5.SuspendLayout();
+            panel4.SuspendLayout();
+            panel2.SuspendLayout();
+            panel3.SuspendLayout();
+            tableLayoutPanel1.SuspendLayout();
+            panel11.SuspendLayout();
+            panel10.SuspendLayout();
+            panel12.SuspendLayout();
             SuspendLayout();
             // 
             // mainPanel
@@ -65,11 +116,12 @@
             mainPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 5F));
             mainPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 35F));
             mainPanel.Controls.Add(leftPanel, 0, 0);
+            mainPanel.Controls.Add(rightPanel, 2, 0);
             mainPanel.Location = new Point(12, 12);
             mainPanel.Name = "mainPanel";
             mainPanel.RowCount = 1;
             mainPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            mainPanel.Size = new Size(1846, 1152);
+            mainPanel.Size = new Size(1840, 1152);
             mainPanel.TabIndex = 1;
             // 
             // leftPanel
@@ -90,7 +142,7 @@
             leftPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
             leftPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             leftPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            leftPanel.Size = new Size(1101, 1146);
+            leftPanel.Size = new Size(1098, 1146);
             leftPanel.TabIndex = 0;
             // 
             // gpuPanel
@@ -104,7 +156,7 @@
             gpuPanel.Controls.Add(label3);
             gpuPanel.Location = new Point(3, 575);
             gpuPanel.Name = "gpuPanel";
-            gpuPanel.Size = new Size(1095, 280);
+            gpuPanel.Size = new Size(1092, 280);
             gpuPanel.TabIndex = 6;
             // 
             // button7
@@ -197,7 +249,7 @@
             firstLeftPanel.Controls.Add(cpuButton);
             firstLeftPanel.Location = new Point(3, 3);
             firstLeftPanel.Name = "firstLeftPanel";
-            firstLeftPanel.Size = new Size(1095, 452);
+            firstLeftPanel.Size = new Size(1092, 452);
             firstLeftPanel.TabIndex = 5;
             // 
             // button8
@@ -300,7 +352,7 @@
             systemToolsLabel.ForeColor = Color.Transparent;
             systemToolsLabel.Location = new Point(3, 527);
             systemToolsLabel.Name = "systemToolsLabel";
-            systemToolsLabel.Size = new Size(1095, 45);
+            systemToolsLabel.Size = new Size(1092, 45);
             systemToolsLabel.TabIndex = 7;
             systemToolsLabel.Text = "System Tools";
             // 
@@ -310,7 +362,7 @@
             panel1.Controls.Add(label4);
             panel1.Location = new Point(3, 861);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1095, 282);
+            panel1.Size = new Size(1092, 282);
             panel1.TabIndex = 8;
             // 
             // label4
@@ -325,6 +377,433 @@
             label4.Size = new Size(204, 45);
             label4.TabIndex = 8;
             label4.Text = "System Tools";
+            // 
+            // rightPanel
+            // 
+            rightPanel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            rightPanel.ColumnCount = 1;
+            rightPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            rightPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            rightPanel.Controls.Add(firstRightPanel, 0, 0);
+            rightPanel.Controls.Add(label13, 0, 1);
+            rightPanel.Controls.Add(tableLayoutPanel1, 0, 2);
+            rightPanel.Location = new Point(1199, 3);
+            rightPanel.Name = "rightPanel";
+            rightPanel.RowCount = 3;
+            rightPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 60F));
+            rightPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            rightPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 30F));
+            rightPanel.Size = new Size(638, 1146);
+            rightPanel.TabIndex = 1;
+            // 
+            // firstRightPanel
+            // 
+            firstRightPanel.BackColor = Color.DarkSlateGray;
+            firstRightPanel.ColumnCount = 1;
+            firstRightPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            firstRightPanel.Controls.Add(panel9, 0, 7);
+            firstRightPanel.Controls.Add(panel8, 0, 6);
+            firstRightPanel.Controls.Add(panel7, 0, 5);
+            firstRightPanel.Controls.Add(panel6, 0, 4);
+            firstRightPanel.Controls.Add(panel5, 0, 3);
+            firstRightPanel.Controls.Add(panel4, 0, 2);
+            firstRightPanel.Controls.Add(panel2, 0, 0);
+            firstRightPanel.Controls.Add(panel3, 0, 1);
+            firstRightPanel.Location = new Point(3, 3);
+            firstRightPanel.Name = "firstRightPanel";
+            firstRightPanel.RowCount = 8;
+            firstRightPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
+            firstRightPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
+            firstRightPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
+            firstRightPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
+            firstRightPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
+            firstRightPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
+            firstRightPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
+            firstRightPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
+            firstRightPanel.Size = new Size(632, 681);
+            firstRightPanel.TabIndex = 0;
+            // 
+            // panel9
+            // 
+            panel9.Controls.Add(checkBox8);
+            panel9.Controls.Add(label12);
+            panel9.Location = new Point(3, 598);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(626, 80);
+            panel9.TabIndex = 13;
+            // 
+            // checkBox8
+            // 
+            checkBox8.AutoSize = true;
+            checkBox8.Location = new Point(502, 48);
+            checkBox8.Name = "checkBox8";
+            checkBox8.Size = new Size(121, 29);
+            checkBox8.TabIndex = 17;
+            checkBox8.Text = "checkBox8";
+            checkBox8.UseVisualStyleBackColor = true;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.BackColor = Color.Transparent;
+            label12.Dock = DockStyle.Bottom;
+            label12.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label12.ForeColor = Color.Transparent;
+            label12.Location = new Point(0, 42);
+            label12.Name = "label12";
+            label12.Size = new Size(200, 38);
+            label12.TabIndex = 15;
+            label12.Text = "Touchpad Lock";
+            // 
+            // panel8
+            // 
+            panel8.Controls.Add(checkBox7);
+            panel8.Controls.Add(label11);
+            panel8.Location = new Point(3, 513);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(626, 79);
+            panel8.TabIndex = 11;
+            // 
+            // checkBox7
+            // 
+            checkBox7.AutoSize = true;
+            checkBox7.Location = new Point(502, 41);
+            checkBox7.Name = "checkBox7";
+            checkBox7.Size = new Size(121, 29);
+            checkBox7.TabIndex = 16;
+            checkBox7.Text = "checkBox7";
+            checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.BackColor = Color.Transparent;
+            label11.Dock = DockStyle.Bottom;
+            label11.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label11.ForeColor = Color.Transparent;
+            label11.Location = new Point(0, 41);
+            label11.Name = "label11";
+            label11.Size = new Size(149, 38);
+            label11.TabIndex = 14;
+            label11.Text = "Over Drive";
+            // 
+            // panel7
+            // 
+            panel7.Controls.Add(checkBox6);
+            panel7.Controls.Add(label10);
+            panel7.Location = new Point(3, 428);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(626, 79);
+            panel7.TabIndex = 9;
+            // 
+            // checkBox6
+            // 
+            checkBox6.AutoSize = true;
+            checkBox6.Location = new Point(502, 51);
+            checkBox6.Name = "checkBox6";
+            checkBox6.Size = new Size(121, 29);
+            checkBox6.TabIndex = 15;
+            checkBox6.Text = "checkBox6";
+            checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.BackColor = Color.Transparent;
+            label10.Dock = DockStyle.Bottom;
+            label10.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label10.ForeColor = Color.Transparent;
+            label10.Location = new Point(0, 41);
+            label10.Name = "label10";
+            label10.Size = new Size(263, 38);
+            label10.TabIndex = 13;
+            label10.Text = "GPU Working Mode";
+            // 
+            // panel6
+            // 
+            panel6.Controls.Add(checkBox5);
+            panel6.Controls.Add(label9);
+            panel6.Location = new Point(3, 343);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(626, 79);
+            panel6.TabIndex = 7;
+            // 
+            // checkBox5
+            // 
+            checkBox5.AutoSize = true;
+            checkBox5.Location = new Point(502, 51);
+            checkBox5.Name = "checkBox5";
+            checkBox5.Size = new Size(121, 29);
+            checkBox5.TabIndex = 14;
+            checkBox5.Text = "checkBox5";
+            checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.BackColor = Color.Transparent;
+            label9.Dock = DockStyle.Bottom;
+            label9.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.Transparent;
+            label9.Location = new Point(0, 41);
+            label9.Name = "label9";
+            label9.Size = new Size(151, 38);
+            label9.TabIndex = 12;
+            label9.Text = "Auto Close";
+            // 
+            // panel5
+            // 
+            panel5.Controls.Add(checkBox4);
+            panel5.Controls.Add(label8);
+            panel5.Location = new Point(3, 258);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(626, 79);
+            panel5.TabIndex = 5;
+            // 
+            // checkBox4
+            // 
+            checkBox4.AutoSize = true;
+            checkBox4.Location = new Point(502, 51);
+            checkBox4.Name = "checkBox4";
+            checkBox4.Size = new Size(121, 29);
+            checkBox4.TabIndex = 13;
+            checkBox4.Text = "checkBox4";
+            checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
+            label8.Dock = DockStyle.Bottom;
+            label8.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.Transparent;
+            label8.Location = new Point(0, 41);
+            label8.Name = "label8";
+            label8.Size = new Size(199, 38);
+            label8.TabIndex = 11;
+            label8.Text = "Network Boost";
+            // 
+            // panel4
+            // 
+            panel4.Controls.Add(checkBox3);
+            panel4.Controls.Add(label7);
+            panel4.Location = new Point(3, 173);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(626, 79);
+            panel4.TabIndex = 3;
+            // 
+            // checkBox3
+            // 
+            checkBox3.AutoSize = true;
+            checkBox3.Location = new Point(502, 51);
+            checkBox3.Name = "checkBox3";
+            checkBox3.Size = new Size(121, 29);
+            checkBox3.TabIndex = 12;
+            checkBox3.Text = "checkBox3";
+            checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.Dock = DockStyle.Bottom;
+            label7.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.Transparent;
+            label7.Location = new Point(0, 41);
+            label7.Name = "label7";
+            label7.Size = new Size(201, 38);
+            label7.TabIndex = 10;
+            label7.Text = "GPU Overclock";
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(checkBox1);
+            panel2.Controls.Add(label5);
+            panel2.Location = new Point(3, 3);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(626, 79);
+            panel2.TabIndex = 0;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(502, 16);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(121, 29);
+            checkBox1.TabIndex = 9;
+            checkBox1.Text = "checkBox1";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Dock = DockStyle.Top;
+            label5.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.Transparent;
+            label5.Location = new Point(0, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(196, 45);
+            label5.TabIndex = 8;
+            label5.Text = "Legion Edge";
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(checkBox2);
+            panel3.Controls.Add(label6);
+            panel3.Location = new Point(3, 88);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(626, 79);
+            panel3.TabIndex = 1;
+            // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.Location = new Point(502, 41);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(121, 29);
+            checkBox2.TabIndex = 11;
+            checkBox2.Text = "checkBox2";
+            checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Dock = DockStyle.Bottom;
+            label6.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.Transparent;
+            label6.Location = new Point(0, 41);
+            label6.Name = "label6";
+            label6.Size = new Size(198, 38);
+            label6.TabIndex = 9;
+            label6.Text = "Thermal Mode";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Dock = DockStyle.Bottom;
+            label13.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label13.ForeColor = Color.Transparent;
+            label13.Location = new Point(3, 756);
+            label13.Name = "label13";
+            label13.Size = new Size(632, 45);
+            label13.TabIndex = 1;
+            label13.Text = "Quick Settings";
+            // 
+            // tableLayoutPanel1
+            // 
+            tableLayoutPanel1.BackColor = Color.DarkSlateGray;
+            tableLayoutPanel1.ColumnCount = 1;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.Controls.Add(panel11, 0, 2);
+            tableLayoutPanel1.Controls.Add(panel10, 0, 0);
+            tableLayoutPanel1.Controls.Add(panel12, 0, 1);
+            tableLayoutPanel1.Location = new Point(3, 804);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 3;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333359F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333359F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel1.Size = new Size(632, 339);
+            tableLayoutPanel1.TabIndex = 2;
+            // 
+            // panel11
+            // 
+            panel11.Controls.Add(checkBox11);
+            panel11.Controls.Add(label16);
+            panel11.Location = new Point(3, 228);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(626, 100);
+            panel11.TabIndex = 3;
+            // 
+            // checkBox11
+            // 
+            checkBox11.AutoSize = true;
+            checkBox11.Location = new Point(502, 62);
+            checkBox11.Name = "checkBox11";
+            checkBox11.Size = new Size(131, 29);
+            checkBox11.TabIndex = 18;
+            checkBox11.Text = "checkBox11";
+            checkBox11.UseVisualStyleBackColor = true;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.BackColor = Color.Transparent;
+            label16.Dock = DockStyle.Bottom;
+            label16.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label16.ForeColor = Color.Transparent;
+            label16.Location = new Point(0, 62);
+            label16.Name = "label16";
+            label16.Size = new Size(276, 38);
+            label16.TabIndex = 16;
+            label16.Text = "Adaptive refresh rate";
+            // 
+            // panel10
+            // 
+            panel10.Controls.Add(checkBox9);
+            panel10.Controls.Add(label14);
+            panel10.Location = new Point(3, 3);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(626, 106);
+            panel10.TabIndex = 1;
+            // 
+            // checkBox9
+            // 
+            checkBox9.AutoSize = true;
+            checkBox9.Location = new Point(502, 77);
+            checkBox9.Name = "checkBox9";
+            checkBox9.Size = new Size(121, 29);
+            checkBox9.TabIndex = 18;
+            checkBox9.Text = "checkBox9";
+            checkBox9.UseVisualStyleBackColor = true;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.BackColor = Color.Transparent;
+            label14.Dock = DockStyle.Bottom;
+            label14.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label14.ForeColor = Color.Transparent;
+            label14.Location = new Point(0, 68);
+            label14.Name = "label14";
+            label14.Size = new Size(175, 38);
+            label14.TabIndex = 16;
+            label14.Text = "RapidCharge";
+            // 
+            // panel12
+            // 
+            panel12.Controls.Add(checkBox10);
+            panel12.Controls.Add(label15);
+            panel12.Location = new Point(3, 115);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(626, 107);
+            panel12.TabIndex = 4;
+            // 
+            // checkBox10
+            // 
+            checkBox10.AutoSize = true;
+            checkBox10.Location = new Point(502, 69);
+            checkBox10.Name = "checkBox10";
+            checkBox10.Size = new Size(131, 29);
+            checkBox10.TabIndex = 18;
+            checkBox10.Text = "checkBox10";
+            checkBox10.UseVisualStyleBackColor = true;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.BackColor = Color.Transparent;
+            label15.Dock = DockStyle.Bottom;
+            label15.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label15.ForeColor = Color.Transparent;
+            label15.Location = new Point(0, 69);
+            label15.Name = "label15";
+            label15.Size = new Size(178, 38);
+            label15.TabIndex = 16;
+            label15.Text = "WiFi Security";
             // 
             // Form1
             // 
@@ -347,6 +826,32 @@
             firstLeftPanel.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            rightPanel.ResumeLayout(false);
+            rightPanel.PerformLayout();
+            firstRightPanel.ResumeLayout(false);
+            panel9.ResumeLayout(false);
+            panel9.PerformLayout();
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
+            panel7.ResumeLayout(false);
+            panel7.PerformLayout();
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            tableLayoutPanel1.ResumeLayout(false);
+            panel11.ResumeLayout(false);
+            panel11.PerformLayout();
+            panel10.ResumeLayout(false);
+            panel10.PerformLayout();
+            panel12.ResumeLayout(false);
+            panel12.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -360,7 +865,6 @@
         private Button cpuButton;
         private Panel gpuPanel;
         private Label label3;
-        private Panel rightPanel;
         private Panel firstLeftPanel;
         private Label label2;
         private Label gpuLabel;
@@ -376,5 +880,42 @@
         private Panel panel1;
         private Label label4;
         private Button button8;
+        private TableLayoutPanel firstRightPanel;
+        private TableLayoutPanel rightPanel;
+        private Label label5;
+        private Label label12;
+        private Label label11;
+        private Label label10;
+        private Label label9;
+        private Label label8;
+        private Label label7;
+        private Label label6;
+        private Panel panel9;
+        private Panel panel8;
+        private Panel panel7;
+        private Panel panel6;
+        private Panel panel5;
+        private Panel panel4;
+        private Panel panel2;
+        private Panel panel3;
+        private Label label13;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Panel panel11;
+        private Label label16;
+        private Panel panel10;
+        private Label label14;
+        private Panel panel12;
+        private Label label15;
+        private CheckBox checkBox8;
+        private CheckBox checkBox7;
+        private CheckBox checkBox6;
+        private CheckBox checkBox5;
+        private CheckBox checkBox4;
+        private CheckBox checkBox3;
+        private CheckBox checkBox1;
+        private CheckBox checkBox2;
+        private CheckBox checkBox11;
+        private CheckBox checkBox9;
+        private CheckBox checkBox10;
     }
 }
